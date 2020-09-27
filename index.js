@@ -44,8 +44,9 @@ class CoffeeGroup {
     }
 
     print_group(channel) {
-        let outputMsg = `Coffee Chat Group: ${this.id}`;
-        this.users.forEach(user => outputMsg += `\n${user}`);
+        let outputMsg = `Coffee Chat Group ${this.id}: `;
+        this.users.forEach(user => outputMsg += `${user}, `);
+        outputMsg += '\n';
         channel.send(outputMsg);
     }
 }
