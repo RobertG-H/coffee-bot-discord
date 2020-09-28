@@ -108,7 +108,7 @@ function startMatch() {
 // Setup
 client.once('ready', () => {
     console.log('Coffee Bot Loaded!');
-    client.user.setActivity('c!help');
+    client.user.setActivity('Java Jumper');
 });
 
 // When joining a server
@@ -129,7 +129,7 @@ client.on('message', message => {
     /* SECTION: COMMANDS */
     // HELP
     if (cmd === 'help') {
-        message.channel.send(`Hiya! \n\nMy name is Coffee Bot. \n\nYou can see me other commands at: ${githubRepo} `);
+        message.channel.send(`Hiya! \n\nMy name is Coffee Bot. \n\nYou can see my other commands at: ${githubRepo} `);
     }
     // HELLO
     else if (cmd === 'hello') {
