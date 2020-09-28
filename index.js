@@ -6,7 +6,7 @@ const cron = require('node-cron');
 const prefix = 'c!';
 const githubRepo = 'https://github.com/RobertG-H/coffee-bot-discord/blob/master/README.md';
 const coffeeChatterRole = 'Coffee Chatter';
-const matchChannel = 'coffee-chats'; // TODO Make this settable per guild
+const matchChannel = 'weekly-coffee-chats'; // TODO Make this settable per guild
 const coffeeChattersPerMatch = 3; // TODO Make this settable per guild
 // TODO make scheduling time configurable (See current setting at bottom)
 
