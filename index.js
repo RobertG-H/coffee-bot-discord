@@ -190,8 +190,8 @@ cron.schedule('*/10 * * * *', function () {
 });
 
 // Scheduler to post matches
-// Every Monday at 10 AM (cron timezone is 1 hour behind)
-var task = cron.schedule('0 9 * * Monday', function () {
+// Every Monday at 10 AM
+var task = cron.schedule('0 10 * * Monday', function () {
     startMatch();
 }, {
     scheduled: true,
